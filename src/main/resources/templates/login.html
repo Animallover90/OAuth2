@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>login</div>
+<div class="col-md-12">
+    <!-- 로그인 기능 영역 -->
+    <div class="row">
+        <div class="col-md-6">
+            <a href="https://accounts.google.com/o/oauth2/v2/auth?client_id=클라이언트 아이디&redirect_uri=http://localhost:8080/login/google/redirect&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email" class="btn btn-success active" role="button">Google Login</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="https://kauth.kakao.com/oauth/authorize?client_id=클라이언트 아이디&redirect_uri=http://localhost:8080/login/kakao/redirect&response_type=code" class="btn btn-success active" role="button">Kakao Login</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=클라이언트 아이디&redirect_uri=http://localhost:8080/login/naver/redirect" class="btn btn-success active" role="button">Naver Login</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
